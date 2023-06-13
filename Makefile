@@ -14,7 +14,7 @@ install:
 
 # Run tests
 test:
-    $(PYTHON) -m unittest discover tests
+    pip install -m unittest discover tests
 
 # Lint code
 lint:
