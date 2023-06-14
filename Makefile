@@ -11,7 +11,7 @@ all: test
 install:
     echo "Running installments"
     #pip install --upgrade pip &&\
-     pip install -r requirements.txt
+    pip install -r requirements.txt
 
 # Run tests
 test:
