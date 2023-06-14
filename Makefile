@@ -9,16 +9,19 @@ all: test
 
 # Install dependencies
 install:
-    pip install --upgrade pip &&\
+    #echo "Running installments"
+    #pip install --upgrade pip &&\
     pip install -r requirements.txt
 
 # Run tests
 test:
-    $(PYTHON) -m unittest discover -s tests -p "test*.py"
+    #echo "Running tests"
+    $(PYTHON) -m unittest discover tests
 
 # Lint code
 lint:
-    pylint --disable=R,C sentiment_analysis.py
+    #echo "Running lint"
+    pylint --disable=R, C sentiment_analysis.py
 
 # Clean generated files
 clean:
