@@ -11,7 +11,7 @@ install:
 
 # Run tests
 test:
-    $(PYTHON) -m unittest discover -s . -p "test_*.py"
+	$(PYTHON) -m unittest discover -s . -p "test_*.py"
 
 # Lint code
 lint:
