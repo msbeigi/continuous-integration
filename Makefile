@@ -3,7 +3,7 @@ PYTHON := python3
 PIP := pip3
 
 # Default target
-all: test
+all: install lint test format
 
 # Install dependencies
 install:
@@ -13,6 +13,8 @@ install:
 test:
 	$(PYTHON) -m unittest discover -s . -p "test_*.py"
 
+format:
+	black *.py
 # Lint code
 lint:
 	pylint --disable=R,C sentiment_analysis.py
