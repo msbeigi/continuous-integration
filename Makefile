@@ -1,5 +1,3 @@
-# Example Makefile for PyTorch project
-
 # Set up variables
 PYTHON := python3
 PIP := pip3
