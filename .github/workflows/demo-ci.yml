@@ -1,17 +1,16 @@
 name: Python application test with Github Actions
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    steps:
-      # existing steps for build job
 
-  format:
-    runs-on: ubuntu-latest
     steps:
-      - name: Set up Python
+      - name: Set up Python 3.8
         uses: actions/setup-python@v2
         with:
           python-version: 3.8
@@ -21,4 +20,3 @@ jobs:
 
       - name: Format code
         run: black *.py
-    
