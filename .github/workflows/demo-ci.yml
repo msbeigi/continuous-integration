@@ -16,7 +16,9 @@ jobs:
           python-version: 3.8
 
       - name: Install dependencies
-        run: pip install black
+        run:  |
+          pip install black
 
       - name: Format code
-        run: black ./*.py
+        run:  | 
+          black ./*.py
