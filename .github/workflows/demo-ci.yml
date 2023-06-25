@@ -19,4 +19,4 @@ jobs:
         run: pip install black
 
       - name: Format code
-        run: black *.py
+        run: black ./*.py
