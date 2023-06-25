@@ -14,7 +14,7 @@ test:
 	$(PYTHON) -m unittest discover -s . -p "test_*.py"
 
 format:
-    black .
+    black ./*.py
 # Lint code
 lint:
 	pylint --disable=R,C sentiment_analysis.py
