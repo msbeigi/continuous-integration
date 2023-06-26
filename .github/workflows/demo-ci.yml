@@ -21,4 +21,4 @@ jobs:
 
       - name: Format code
         run:  | 
-          black ../*.py
+          black ../../*.py
