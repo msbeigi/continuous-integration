@@ -11,10 +11,10 @@ install:
 
 # Run tests
 test:
-	$(PYTHON) -m unittest discover -s . -p "./test_*.py"
+	$(PYTHON) -m unittest discover -s . -p "test_*.py"
 
 format:
-    black ./*.py
+    black .
 # Lint code
 lint:
 	pylint --disable=R,C sentiment_analysis.py
