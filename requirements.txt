@@ -1,3 +1,6 @@
 pylint
 ipython
 nltk
+black
+pytest
+pytest-cov
