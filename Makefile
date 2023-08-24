@@ -14,7 +14,8 @@ test:
 	$(PYTHON) -m unittest discover -s . -p "test_*.py"
 
 format:
-    find continuous-integration -name "*.py" -exec black {} \;
+    black ./*.py
+    #find continuous-integration -name "*.py" -exec black {} \;
 # Lint code
 lint:
 	pylint --disable=R,C sentiment_analysis.py
