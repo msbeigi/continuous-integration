@@ -31,7 +31,10 @@ jobs:
         run: |
           ls -la
 
-      - name: Run Makefile Format
+#      - name: Run Makefile Format
+#        run: |
+#          cd continuous-integration
+#          make format
+      - name: Run Makefile
         run: |
-          cd continuous-integration
-          make format
+          make -C continuous-integration format
