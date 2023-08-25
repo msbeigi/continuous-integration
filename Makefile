@@ -14,7 +14,7 @@ test:
 	$(PYTHON) -m unittest discover -s . -p "test_*.py"
 
 format:
-    black ./*.py
+    black .
     #find continuous-integration -name "*.py" -exec black {} \;
 # Lint code
 lint:
