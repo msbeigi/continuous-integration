@@ -10,20 +10,28 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      -   name: Checkout Repository
-          uses: actions/checkout@v2
+      - name: Checkout Repository
+        uses: actions/checkout@v2
 
       - name: Set up Python 3.8
         uses: actions/setup-python@v1
         with:
           python-version: 3.8
 
-      - name: List Files in Directory
-        run:  |
-         ls -la
+      - name: Create virtual environment
+        run: python3 -m venv venv
+
+      - name: Activate virtual environment
+        run: source venv/bin/activate
 
       - name: Install dependencies
-        run:  |
-          pip install -r requirements.txt
+        run: pip install -r continuous-integration/requirements.txt
 
-      
+      - name: List Files in Directory
+        run: |
+          ls -la
+
+      - name: Run Makefile Format
+        run: |
+          cd continuous-integration
+          make format
