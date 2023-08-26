@@ -7,7 +7,7 @@ all: install lint test format
 
 # Install dependencies
 install:
-    pip install -r requirements.txt
+	pip install -r requirements.txt
 
 # Run tests
 test:
