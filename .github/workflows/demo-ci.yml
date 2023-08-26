@@ -33,7 +33,7 @@ jobs:
 
       - name: Run Makefile Format
         run: |
-          cd ../continuous-integration
+#          cd ../continuous-integration
           make format
 #      - name: Run Makefile
 #        run: |
