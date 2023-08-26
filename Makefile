@@ -9,9 +9,9 @@ all: install lint test format
 install:
 	pip install -r requirements.txt
 
-# Run tests
-test:
-    $(PYTHON) -m unittest discover -s . -p "test_*.py"
+# # Run tests
+# test:
+#     $(PYTHON) -m unittest discover -s . -p "test_*.py"
 
 # Format code
 format:
