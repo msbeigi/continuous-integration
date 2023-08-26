@@ -15,7 +15,7 @@ install:
 
 # Format code
 format:
-    black .
+    black "*.py"
 
 # Lint code
 lint:
