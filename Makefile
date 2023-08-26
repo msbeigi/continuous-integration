@@ -15,7 +15,7 @@ test:
 
 # Format code
 format:
-	black .
+    black .
 
 # Lint code
 lint:
