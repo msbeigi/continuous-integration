@@ -33,6 +33,9 @@ jobs:
       - name: Lint with pylint
         run: make lint
 
+      - name: Run unit tests
+        run: make test
+
       - name: Run Makefile
         run: |
           make format
