@@ -7,23 +7,22 @@ all: install lint test format
 
 # Install dependencies
 install:
-	pip install -r requirements.txt
+    pip install -r requirements.txt
 
 # Run tests
 test:
-	$(PYTHON) -m unittest discover -s . -p "test_*.py"
+    $(PYTHON) -m unittest discover -s . -p "test_*.py"
 
+# Format code
 format:
-    black .
-    #find continuous-integration -name "*.py" -exec black {} \;
+	black .
+
 # Lint code
 lint:
-	pylint --disable=R,C sentiment_analysis.py
+    pylint --disable=R,C sentiment_analysis.py
 
 # Clean generated files
 clean:
 	rm -rf build/
 	rm -rf dist/
 	rm -rf *.egg-info
-
-# Additional targets...
