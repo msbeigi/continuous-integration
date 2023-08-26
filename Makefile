@@ -15,7 +15,7 @@ test:
 
 # Format code
 format:
-	black "*.py"
+	black .
 
 # Lint code
 lint:
