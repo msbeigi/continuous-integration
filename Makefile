@@ -13,6 +13,7 @@ install:
 test:
 	$(PYTHON) -m unittest discover -s . -p "test_*.py"
 
+
 # Format code
 format:
 	black .
