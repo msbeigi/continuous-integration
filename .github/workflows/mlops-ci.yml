@@ -20,15 +20,16 @@ jobs:
         run: |
           git config user.name "msbeigi"
           git config user.email "msbeigi@gmail.com"
-      - name: Add remote
-
+      # - name: Add remote
         # env:
           # HF: ${{ secrets.HG_ML_DEMO }}
-        run: git remote add space https://huggingface.co/spaces/msbeigi/MLOpsDemo
+        # run: git remote add space https://huggingface.co/spaces/msbeigi/MLOpsDemo
       - name: Push to hub
         env:
           HF: ${{ secrets.HG_ML_DEMO }}
-        run: git push --force https://huggingface.co/spaces/msbeigi/MLOpsDemo 
+        run: |
+          git remote add space https://huggingface.co/spaces/msbeigi/MLOpsDemo
+          git push --force https://huggingface.co/spaces/msbeigi/MLOpsDemo main
 
 
 
