@@ -26,4 +26,5 @@ jobs:
         env:
           HF: ${{ secrets.HG_ML_DEMO }}
         run: |          
-          git push --force https://msbeigi:$HF@huggingface.co/spaces/msbeigi/MLOpsDemo main
+          git subtree push --prefix MLOps-demo https://msbeigi:$HF@huggingface.co/spaces/msbeigi/MLOpsDemo main
+
