@@ -1,6 +1,6 @@
 ---
 title: Hugging face Demo
-emoji: 🚀
+emoji: 🏆
 colorFrom: #FFD700
 colorTo: #FF6347
 sdk: {sdk}
