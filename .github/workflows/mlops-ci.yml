@@ -21,11 +21,11 @@ jobs:
         env:
           HF: ${{ secrets.HG_ML_DEMO }}
         run: |
-          git remote add space https://msbeigi:$HF@huggingface.co/spaces/msbeigi/GitDemo
+          git remote add space https://msbeigi:$HF@huggingface.co/spaces/msbeigi/Gitdemo
       - name: Push to hub
         env:
           HF: ${{ secrets.HG_ML_DEMO }}
         run: |          
-          cd MLOps-demo
-          git push --force https://msbeigi:$HF@huggingface.co/spaces/msbeigi/GitDemo main
+          
+          git push --force https://msbeigi:$HF@huggingface.co/spaces/msbeigi/Gitdemo main:MLOps-demo
 
