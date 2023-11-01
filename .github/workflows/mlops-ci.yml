@@ -29,6 +29,7 @@ jobs:
         env:
           HF: ${{ secrets.HG_ML_DEMO }}
         run: |          
-          cd MLOps-demo
+          git add -A MLOps-demo/
+          git commit -m "Update from MLOps-demo"
           git push --force https://msbeigi:$HF@huggingface.co/spaces/msbeigi/Gitdemo main
 
